@@ -18,7 +18,8 @@
 		"express": "3.0.6",
 		"stylus": "0.31.0",
 		"jade": "0.27.7",
-		"mongodb": "1.2.7",
+     	"jugglingdb": "0.2.x",
+     	"jugglingdb-mysql": "latest",
 		"moment" : "1.7.2",
 		"emailjs": "0.3.3"
 	},

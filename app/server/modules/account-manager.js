@@ -104,7 +104,7 @@ exports.updatePassword = function(email, newPass, callback)
 
 exports.deleteAccount = function(id, callback)
 {
-	accounts.remove({where:{ id: id }}, callback);
+	accounts.destroyAll({where:{ id: id }}, callback);
 }
 
 exports.getAccountByEmail = function(email, callback)
@@ -129,7 +129,7 @@ exports.getAllRecords = function(callback)
 
 exports.delAllRecords = function(callback)
 {
-	accounts.remove({}, callback); // reset accounts collection for testing //
+	accounts.destroyAll({}, callback); // reset accounts collection for testing //
 }
 
 /* private encryption & validation methods */

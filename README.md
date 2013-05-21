@@ -1,4 +1,8 @@
-#[Node-Login](http://node-login.braitsch.io)
+
+#[Node-Login](http://node-login.braitsch.io) - Mysql
+
+#### This is the same node login project but uses mysql as the database and jugglingdb as the ORM.
+
 
 ####A basic login & account management system built in Node.js with the following features :
 
@@ -13,9 +17,12 @@
 
 ####Node-Login is built on top of the following libraries :
 
+
+* [Mysql](http://www.mysql.com/) - Database Storage
+* [jugglingdb](https://github.com/1602/jugglingdb) - DB ORM
+* [jugglingdb-mysql](https://github.com/jugglingdb/mysql-adapter) - Jugglingdb Mysql Adapter
 * [Node.js](http://nodejs.org/) - Application Server
 * [Express.js](http://expressjs.com/) - Node.js Web Framework
-* [MongoDb](http://www.mongodb.org/) - Database Storage
 * [Jade](http://jade-lang.com/) - HTML Templating Engine
 * [Stylus](http://learnboost.github.com/stylus/) - CSS Preprocessor
 * [EmailJS](http://github.com/eleith/emailjs) - Node.js > SMTP Server Middleware
