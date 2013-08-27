@@ -1,6 +1,6 @@
 #[Node-Login](http://node-login.braitsch.io)
 
-####A basic login & account management system built in Node.js with the following features :
+####A basic login & account management system built in Node.js and Mysql with the following features :
 
 * New User Account Creation
 * Secure Password Reset via Email
@@ -15,7 +15,9 @@
 
 * [Node.js](http://nodejs.org/) - Application Server
 * [Express.js](http://expressjs.com/) - Node.js Web Framework
-* [MongoDb](http://www.mongodb.org/) - Database Storage
+* [jugglingdb](https://github.com/1602/jugglingdb) - Database ORM
+* [jugglingdb-mysql](https://github.com/jugglingdb/mysql-adapter) - Jugglingdb Mysql Adapter
+* [Mysql](http://www.mysql.com/) - Database Storage
 * [Jade](http://jade-lang.com/) - HTML Templating Engine
 * [Stylus](http://learnboost.github.com/stylus/) - CSS Preprocessor
 * [EmailJS](http://github.com/eleith/emailjs) - Node.js > SMTP Server Middleware
