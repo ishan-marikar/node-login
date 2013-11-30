@@ -15,6 +15,13 @@ var accounts = schema.define('accounts', {
     name:String,
     country:String
 });
+
+schema.isActual(function(err, actual) {
+    if (!actual) {
+        schema.autoupdate();
+    }
+});
+
 /* login validation methods */
 
 exports.autoLogin = function(user, pass, callback)
