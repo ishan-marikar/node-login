@@ -15,6 +15,13 @@ var accounts = schema.define('accounts', {
     name:String,
     country:String
 });
+
+schema.isActual(function(err, actual) {
+    if (!actual) {
+        schema.autoupdate();
+    }
+});
+
 /* login validation methods */
 
 exports.autoLogin = function(user, pass, callback)
@@ -114,7 +121,7 @@ exports.getAccountByEmail = function(email, callback)
 
 exports.validateResetLink = function(email, passHash, callback)
 {
-	accounts.find({ where : {email:email, pass:passHash} }, function(e, o){
+	accounts.findOne({ where : {email:email, pass:passHash} }, function(e, o){
 		callback(o ? 'ok' : null);
 	});
 }
